@@ -1,6 +1,7 @@
 require "nvchad.options"
 
--- add yours here!
+local o = vim.o
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+o.cursorlineopt = "both" -- to enable cursorline!
+o.relativenumber = true -- Makes it easier to jump to lines
+o.wrap = false -- Disable line wrapping

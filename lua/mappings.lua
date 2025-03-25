@@ -4,7 +4,11 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
-map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+-- Disable arrow keys in normal mode
+map("n", "<Up>", '<cmd> echo "Use k to move" <CR>')
+map("n", "<Down>", '<cmd> echo "Use j to move" <CR>')
+map("n", "<Left>", '<cmd> echo "Use h to move" <CR>')
+map("n", "<Right>", '<cmd> echo "Use l to move" <CR>')
 
 -- Tmux navigation override
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Window left" })
