@@ -154,4 +154,10 @@ return {
       require "configs.harpoonconfig"
     end,
   },
+  {
+    "echasnovski/mini.nvim",
+    config = function()
+      require "configs.miniconfig"
+    end,
+  },
 }
